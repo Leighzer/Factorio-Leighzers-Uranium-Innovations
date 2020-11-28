@@ -2,7 +2,7 @@ uranium_basic_belt_animation_set =
 {
   animation_set =
   {
-    filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-transport-belt/uranium-transport-belt.png",
+    filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-transport-belt/uranium-transport-belt.png",
     priority = "extra-high",
     width = 64,
     height = 64,
@@ -10,7 +10,7 @@ uranium_basic_belt_animation_set =
     direction_count = 20,
     hr_version =
     {
-      filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-transport-belt/hr-uranium-transport-belt.png",
+      filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-transport-belt/hr-uranium-transport-belt.png",
       priority = "extra-high",
       width = 128,
       height = 128,

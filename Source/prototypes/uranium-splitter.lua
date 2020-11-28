@@ -1,14 +1,14 @@
 require("prototypes.uranium-transport-belt-pictures")
 
-local hit_effects = require ("__base__.prototypes.entity.demo-hit-effects")
-local sounds = require("__base__.prototypes.entity.demo-sounds")
+local hit_effects = require ("__base__.prototypes.entity.hit-effects")
+local sounds = require("__base__.prototypes.entity.sounds")
 
 data:extend({  
 
   {
     type = "item",
     name = "uranium-splitter",
-    icon = "__leighzeruraniumlogistics__/graphics/icons/uranium-splitter.png",
+    icon = "__leighzeruraniuminnovations__/graphics/icons/uranium-splitter.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "belt",
     order = "c[splitter]-d[uranium-splitter]",
@@ -36,7 +36,7 @@ data:extend({
   {
       type = "splitter",
       name = "uranium-splitter",
-      icon = "__leighzeruraniumlogistics__/graphics/icons/uranium-splitter.png",
+      icon = "__leighzeruraniuminnovations__/graphics/icons/uranium-splitter.png",
       icon_size = 64, icon_mipmaps = 4,
       flags = {"placeable-neutral", "player-creation"},
       minable = {mining_time = 0.1, result = "uranium-splitter"},
@@ -57,14 +57,14 @@ data:extend({
       structure_animation_speed_coefficient = 0.7,
       structure_animation_movement_cooldown = 10,
       fast_replaceable_group = "transport-belt",      
-      speed = leighzermods.leighzeruraniumlogistics.beltSpeed,
+      speed = leighzermods.leighzeruraniuminnovations.logistics.beltSpeed,
       belt_animation_set = uranium_basic_belt_animation_set,
       working_sound = sounds.splitter,
       structure =
       {
         north =
         {
-          filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-splitter/uranium-splitter-north.png",
+          filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-splitter/uranium-splitter-north.png",
           frame_count = 32,
           line_length = 8,
           priority = "extra-high",
@@ -73,7 +73,7 @@ data:extend({
           shift = util.by_pixel(6, 0),
           hr_version =
           {
-            filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-splitter/hr-uranium-splitter-north.png",
+            filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-splitter/hr-uranium-splitter-north.png",
             frame_count = 32,
             line_length = 8,
             priority = "extra-high",
@@ -85,7 +85,7 @@ data:extend({
         },
         east =
         {
-          filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-splitter/uranium-splitter-east.png",
+          filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-splitter/uranium-splitter-east.png",
           frame_count = 32,
           line_length = 8,
           priority = "extra-high",
@@ -94,7 +94,7 @@ data:extend({
           shift = util.by_pixel(4, 12),
           hr_version =
           {
-            filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-splitter/hr-uranium-splitter-east.png",
+            filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-splitter/hr-uranium-splitter-east.png",
             frame_count = 32,
             line_length = 8,
             priority = "extra-high",
@@ -106,7 +106,7 @@ data:extend({
         },
         south =
         {
-          filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-splitter/uranium-splitter-south.png",
+          filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-splitter/uranium-splitter-south.png",
           frame_count = 32,
           line_length = 8,
           priority = "extra-high",
@@ -115,7 +115,7 @@ data:extend({
           shift = util.by_pixel(4, 0),
           hr_version =
           {
-            filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-splitter/hr-uranium-splitter-south.png",
+            filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-splitter/hr-uranium-splitter-south.png",
             frame_count = 32,
             line_length = 8,
             priority = "extra-high",
@@ -127,7 +127,7 @@ data:extend({
         },
         west =
         {
-          filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-splitter/uranium-splitter-west.png",
+          filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-splitter/uranium-splitter-west.png",
           frame_count = 32,
           line_length = 8,
           priority = "extra-high",
@@ -136,7 +136,7 @@ data:extend({
           shift = util.by_pixel(6, 12),
           hr_version =
           {
-            filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-splitter/hr-uranium-splitter-west.png",
+            filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-splitter/hr-uranium-splitter-west.png",
             frame_count = 32,
             line_length = 8,
             priority = "extra-high",
@@ -152,7 +152,7 @@ data:extend({
         north = util.empty_sprite(),
         east =
         {
-          filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-splitter/uranium-splitter-east-top_patch.png",
+          filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-splitter/uranium-splitter-east-top_patch.png",
           frame_count = 32,
           line_length = 8,
           priority = "extra-high",
@@ -161,7 +161,7 @@ data:extend({
           shift = util.by_pixel(4, -20),
           hr_version =
           {
-            filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-splitter/hr-uranium-splitter-east-top_patch.png",
+            filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-splitter/hr-uranium-splitter-east-top_patch.png",
             frame_count = 32,
             line_length = 8,
             priority = "extra-high",
@@ -174,7 +174,7 @@ data:extend({
         south = util.empty_sprite(),
         west =
         {
-          filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-splitter/uranium-splitter-west-top_patch.png",
+          filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-splitter/uranium-splitter-west-top_patch.png",
           frame_count = 32,
           line_length = 8,
           priority = "extra-high",
@@ -183,7 +183,7 @@ data:extend({
           shift = util.by_pixel(6, -18),
           hr_version =
           {
-            filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-splitter/hr-uranium-splitter-west-top_patch.png",
+            filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-splitter/hr-uranium-splitter-west-top_patch.png",
             frame_count = 32,
             line_length = 8,
             priority = "extra-high",
@@ -198,7 +198,7 @@ data:extend({
     {
       type = "corpse",
       name = "uranium-splitter-remnants",
-      icon = "__leighzeruraniumlogistics__/graphics/icons/uranium-splitter.png",
+      icon = "__leighzeruraniuminnovations__/graphics/icons/uranium-splitter.png",
       icon_size = 64, icon_mipmaps = 4,
       flags = {"placeable-neutral", "not-on-map"},
       subgroup = "belt-remnants",
@@ -212,7 +212,7 @@ data:extend({
       remove_on_tile_placement = false,
       animation =
       {
-        filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-splitter/remnants/uranium-splitter-remnants.png",
+        filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-splitter/remnants/uranium-splitter-remnants.png",
         line_length = 1,
         width = 96,
         height = 96,
@@ -223,7 +223,7 @@ data:extend({
         shift = util.by_pixel(4, 1.5),
         hr_version =
         {
-          filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-splitter/remnants/hr-uranium-splitter-remnants.png",
+          filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-splitter/remnants/hr-uranium-splitter-remnants.png",
           line_length = 1,
           width = 190,
           height = 190,

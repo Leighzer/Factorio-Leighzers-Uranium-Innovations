@@ -9,12 +9,9 @@ for _,force in pairs(game.forces) do
             for i, effect in ipairs(v.effects) do
                 -- if it unlocks a recipe and has a recipe
                 if (effect.type == "unlock-recipe" and effect.recipe) then
-                    -- search through recipes
-                    for kk, vv in pairs(force.recipes) do
-                        -- if the effect matches the recipe and the recipe is not enabled
-                        if (effect.recipe == vv.name and (not vv.enabled)) then                            
-                            vv.enabled = true -- enable it
-                        end
+                    -- if the recipe exists
+                    if force.recipes[effect.recipe] then
+                        force.recipes[effect.recipe].enabled = true -- enable it
                     end
                 end
             end

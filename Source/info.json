@@ -6,6 +6,6 @@
   "contact": "Please message me on the factorio forums my username is leighzer.",
   "homepage": "",
   "factorio_version": "1.1",
-  "dependencies": [ "base >= 1.1.0"],
+  "dependencies": [ "base >= 1.1.0", "leighzerlib >= 0.3.0"],
   "description": "Adds a new tier of uranium infused buildings and tech."
 }

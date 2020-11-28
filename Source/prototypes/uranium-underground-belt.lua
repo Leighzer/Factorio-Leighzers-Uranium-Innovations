@@ -1,14 +1,14 @@
 require("prototypes.uranium-transport-belt-pictures")
 
-local hit_effects = require ("__base__.prototypes.entity.demo-hit-effects")
-local sounds = require("__base__.prototypes.entity.demo-sounds")
+local hit_effects = require ("__base__.prototypes.entity.hit-effects")
+local sounds = require("__base__.prototypes.entity.sounds")
 
 data:extend({
   
   {
     type = "item",
     name = "uranium-underground-belt",
-    icon = "__leighzeruraniumlogistics__/graphics/icons/uranium-underground-belt.png",    
+    icon = "__leighzeruraniuminnovations__/graphics/icons/uranium-underground-belt.png",    
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "belt",
     order = "b[underground-belt]-d[uranium-underground-belt]",
@@ -36,14 +36,14 @@ data:extend({
   {
       type = "underground-belt",
       name = "uranium-underground-belt",
-      icon = "__leighzeruraniumlogistics__/graphics/icons/uranium-underground-belt.png",    
+      icon = "__leighzeruraniuminnovations__/graphics/icons/uranium-underground-belt.png",    
       icon_size = 64, icon_mipmaps = 4,
       flags = {"placeable-neutral", "player-creation"},
       minable = {mining_time = 0.1, result = "uranium-underground-belt"},
       max_health = 180,
       corpse = "uranium-underground-belt-remnants",
       dying_explosion = "medium-explosion",
-      max_distance = leighzermods.leighzeruraniumlogistics.undergroundBeltMaxLength,
+      max_distance = leighzermods.leighzeruraniuminnovations.logistics.undergroundBeltMaxLength,
       underground_sprite =
       {
         filename = "__core__/graphics/arrows/underground-lines.png",
@@ -79,21 +79,21 @@ data:extend({
       animation_speed_coefficient = 32,
       belt_animation_set = uranium_basic_belt_animation_set,
       fast_replaceable_group = "transport-belt",      
-      speed = leighzermods.leighzeruraniumlogistics.beltSpeed,
+      speed = leighzermods.leighzeruraniuminnovations.logistics.beltSpeed,
       structure =
       {
         direction_in =
         {
           sheet =
           {
-            filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-underground-belt/uranium-underground-belt-structure.png",
+            filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-underground-belt/uranium-underground-belt-structure.png",
             priority = "extra-high",
             width = 96,
             height = 96,
             y = 96,
             hr_version =
             {
-              filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-underground-belt/hr-uranium-underground-belt-structure.png",
+              filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-underground-belt/hr-uranium-underground-belt-structure.png",
               priority = "extra-high",
               width = 192,
               height =192,
@@ -106,13 +106,13 @@ data:extend({
         {
           sheet =
           {
-            filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-underground-belt/uranium-underground-belt-structure.png",
+            filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-underground-belt/uranium-underground-belt-structure.png",
             priority = "extra-high",
             width = 96,
             height = 96,
             hr_version =
             {
-              filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-underground-belt/hr-uranium-underground-belt-structure.png",
+              filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-underground-belt/hr-uranium-underground-belt-structure.png",
               priority = "extra-high",
               width = 192,
               height = 192,
@@ -126,14 +126,14 @@ data:extend({
         {
           sheet =
           {
-            filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-underground-belt/uranium-underground-belt-structure.png",
+            filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-underground-belt/uranium-underground-belt-structure.png",
             priority = "extra-high",
             width = 96,
             height = 96,
             y = 96*3,
             hr_version =
             {
-              filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-underground-belt/hr-uranium-underground-belt-structure.png",
+              filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-underground-belt/hr-uranium-underground-belt-structure.png",
               priority = "extra-high",
               width = 192,
               height = 192,
@@ -146,14 +146,14 @@ data:extend({
         {
           sheet =
           {
-            filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-underground-belt/uranium-underground-belt-structure.png",
+            filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-underground-belt/uranium-underground-belt-structure.png",
             priority = "extra-high",
             width = 96,
             height = 96,
             y = 96*2,
             hr_version =
             {
-              filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-underground-belt/hr-uranium-underground-belt-structure.png",
+              filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-underground-belt/hr-uranium-underground-belt-structure.png",
               priority = "extra-high",
               width = 192,
               height = 192,
@@ -207,7 +207,7 @@ data:extend({
     {
       type = "corpse",
       name = "uranium-underground-belt-remnants",
-      icon = "__leighzeruraniumlogistics__/graphics/icons/uranium-underground-belt.png",
+      icon = "__leighzeruraniuminnovations__/graphics/icons/uranium-underground-belt.png",
       icon_size = 64, icon_mipmaps = 4,
       flags = {"placeable-neutral", "not-on-map", "building-direction-8-way"},
       subgroup = "belt-remnants",
@@ -221,7 +221,7 @@ data:extend({
       remove_on_tile_placement = false,
       animation =
       {
-        filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-underground-belt/remnants/uranium-underground-belt-remnants.png",
+        filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-underground-belt/remnants/uranium-underground-belt-remnants.png",
         line_length = 1,
         width = 78,
         height =72,
@@ -232,7 +232,7 @@ data:extend({
         shift = util.by_pixel(10, 3),
         hr_version =
         {
-          filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-underground-belt/remnants/hr-uranium-underground-belt-remnants.png",
+          filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-underground-belt/remnants/hr-uranium-underground-belt-remnants.png",
           line_length = 1,
           width = 156,
           height = 144,

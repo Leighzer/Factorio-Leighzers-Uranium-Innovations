@@ -1,13 +1,13 @@
-require ("__base__.prototypes.entity.demo-pipecovers")
-local hit_effects = require ("__base__.prototypes.entity.demo-hit-effects")
-local sounds = require("__base__.prototypes.entity.demo-sounds")
+require ("__base__.prototypes.entity.pipecovers")
+local hit_effects = require ("__base__.prototypes.entity.hit-effects")
+local sounds = require("__base__.prototypes.entity.sounds")
 
 data:extend({
   
   {
     type = "item",
     name = "uranium-assembling-machine",
-    icon = "__leighzeruraniumautomation__/graphics/icons/uranium-assembling-machine.png",
+    icon = "__leighzeruraniuminnovations__/graphics/icons/uranium-assembling-machine.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "production-machine",
     order = "d-[uranium-assembling-machine]",
@@ -34,7 +34,7 @@ data:extend({
   {
     type = "assembling-machine",
     name = "uranium-assembling-machine",
-    icon = "__leighzeruraniumautomation__/graphics/icons/uranium-assembling-machine.png",
+    icon = "__leighzeruraniuminnovations__/graphics/icons/uranium-assembling-machine.png",
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 0.2, result = "uranium-assembling-machine"},
@@ -80,7 +80,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__leighzeruraniumautomation__/graphics/entity/uranium-assembling-machine/uranium-assembling-machine.png",
+          filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-assembling-machine/uranium-assembling-machine.png",
           priority = "high",
           width = 108,
           height = 119,
@@ -89,7 +89,7 @@ data:extend({
           shift = util.by_pixel(0, -0.5),
           hr_version =
           {
-            filename = "__leighzeruraniumautomation__/graphics/entity/uranium-assembling-machine/hr-uranium-assembling-machine.png",
+            filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-assembling-machine/hr-uranium-assembling-machine.png",
             priority = "high",
             width = 214,
             height = 237,
@@ -124,7 +124,7 @@ data:extend({
       }
     },
     crafting_categories = {"basic-crafting", "crafting", "advanced-crafting", "crafting-with-fluid"},
-    crafting_speed = leighzermods.leighzeruraniumautomation.craftingSpeed,
+    crafting_speed = leighzermods.leighzeruraniuminnovations.assemblingMachine.craftingSpeed,
     energy_source =
     {
       type = "electric",
@@ -134,7 +134,7 @@ data:extend({
     energy_usage = "750kW",
     module_specification =
     {
-      module_slots = leighzermods.leighzeruraniumautomation.moduleSlots
+      module_slots = leighzermods.leighzeruraniuminnovations.assemblingMachine.moduleSlots
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.6 },
@@ -163,7 +163,7 @@ data:extend({
   {
     type = "corpse",
     name = "uranium-assembling-machine-remnants",
-    icon = "__leighzeruraniumautomation__/graphics/icons/uranium-assembling-machine.png",
+    icon = "__leighzeruraniuminnovations__/graphics/icons/uranium-assembling-machine.png",
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "not-on-map"},
     subgroup = "production-machine-remnants",
@@ -176,7 +176,7 @@ data:extend({
     final_render_layer = "remnants",
     animation = make_rotated_animation_variations_from_sheet (3,
     {
-      filename = "__leighzeruraniumautomation__/graphics/entity/uranium-assembling-machine/remnants/uranium-assembling-machine-remnants.png",
+      filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-assembling-machine/remnants/uranium-assembling-machine-remnants.png",
       line_length = 1,
       width = 164,
       height = 142,
@@ -187,7 +187,7 @@ data:extend({
       shift = util.by_pixel(0, 10),
       hr_version =
       {
-        filename = "__leighzeruraniumautomation__/graphics/entity/uranium-assembling-machine/remnants/hr-uranium-assembling-machine-remnants.png",
+        filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-assembling-machine/remnants/hr-uranium-assembling-machine-remnants.png",
         line_length = 1,
         width = 328,
         height = 282,

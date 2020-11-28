@@ -1,13 +1,13 @@
 require("prototypes.uranium-transport-belt-pictures")
 
-local hit_effects = require ("__base__.prototypes.entity.demo-hit-effects")
-local sounds = require("__base__.prototypes.entity.demo-sounds")
+local hit_effects = require ("__base__.prototypes.entity.hit-effects")
+local sounds = require("__base__.prototypes.entity.sounds")
 
 data:extend({ 
   {
     type = "item",
     name = "uranium-transport-belt",
-    icon = "__leighzeruraniumlogistics__/graphics/icons/uranium-transport-belt.png",
+    icon = "__leighzeruraniuminnovations__/graphics/icons/uranium-transport-belt.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "belt",
     order = "a[transport-belt]-d[uranium-transport-belt]",
@@ -33,7 +33,7 @@ data:extend({
   {
       type = "transport-belt",
       name = "uranium-transport-belt",
-      icon = "__leighzeruraniumlogistics__/graphics/icons/uranium-transport-belt.png",
+      icon = "__leighzeruraniuminnovations__/graphics/icons/uranium-transport-belt.png",
       icon_size = 64, icon_mipmaps = 4,
       flags = {"placeable-neutral", "player-creation"},
       minable = {mining_time = 0.1, result = "uranium-transport-belt"},
@@ -62,7 +62,7 @@ data:extend({
       animation_speed_coefficient = 32,
       belt_animation_set = uranium_basic_belt_animation_set,
       fast_replaceable_group = "transport-belt",      
-      speed = leighzermods.leighzeruraniumlogistics.beltSpeed,
+      speed = leighzermods.leighzeruraniuminnovations.logistics.beltSpeed,
       connector_frame_sprites = transport_belt_connector_frame_sprites,
       circuit_wire_connection_points = circuit_connector_definitions["belt"].points,
       circuit_connector_sprites = circuit_connector_definitions["belt"].sprites,
@@ -71,7 +71,7 @@ data:extend({
   {
     type = "corpse",
     name = "uranium-transport-belt-remnants",
-    icon = "__leighzeruraniumlogistics__/graphics/icons/uranium-transport-belt.png",
+    icon = "__leighzeruraniuminnovations__/graphics/icons/uranium-transport-belt.png",
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "not-on-map"},
     subgroup = "belt-remnants",
@@ -84,7 +84,7 @@ data:extend({
     final_render_layer = "remnants",
     animation =  make_rotated_animation_variations_from_sheet (2,
     {
-      filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-transport-belt/remnants/uranium-transport-belt-remnants.png",
+      filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-transport-belt/remnants/uranium-transport-belt-remnants.png",
       line_length = 1,
       width = 54,
       height = 52,
@@ -95,7 +95,7 @@ data:extend({
       shift = util.by_pixel(1, 0),
       hr_version =
       {
-        filename = "__leighzeruraniumlogistics__/graphics/entity/uranium-transport-belt/remnants/hr-uranium-transport-belt-remnants.png",
+        filename = "__leighzeruraniuminnovations__/graphics/entity/uranium-transport-belt/remnants/hr-uranium-transport-belt-remnants.png",
         line_length = 1,
         width = 106,
         height = 102,

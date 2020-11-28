@@ -1,8 +1,7 @@
 -- create science pack item
 local sciencePackTool = {
     type = "tool",
-    name = leighzermods.leighzeruraniuminnovations.nuclearSciencePack.name,
-    localised_name = "Nuclear science pack",
+    name = leighzermods.leighzeruraniuminnovations.nuclearSciencePack.name,    
     icon = "__leighzeruraniuminnovations__/graphics/icons/nuclear-science-pack.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -13,11 +12,15 @@ local sciencePackTool = {
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value",
 
-    leighzerscienceoresOreTintName = "lime",
-    leighzerscienceoresStartingAreaEnabled = false,
-
-    leighzerburiedscienceMapTintName = "lime",
-    leighzerburiedscienceStartingAreaEnabled = false,
+    leighzerscienceores = {
+        OreTintName = "lime",
+        StartingAreaEnabled = false
+    },
+    
+    leighzerburiedscience = {
+        MapTintName = "lime",
+        StartingAreaEnabled = false
+    }    
 }
 data:extend({
     sciencePackTool

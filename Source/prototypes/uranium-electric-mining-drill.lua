@@ -119,7 +119,8 @@ data:extend({
             {type="fluid", name="sulfuric-acid", amount=100},
             {"copper-plate", 10}
         },
-        result = "uranium-electric-mining-drill"        
+        result = "uranium-electric-mining-drill",
+        enabled = false,
     }, -- recipe
     {
         type = "mining-drill",
@@ -2344,7 +2345,8 @@ data:extend({
     
         circuit_wire_connection_points = circuit_connector_definitions["electric-mining-drill"].points,
         circuit_connector_sprites = circuit_connector_definitions["electric-mining-drill"].sprites,
-        circuit_wire_max_distance = default_circuit_wire_max_distance
+        circuit_wire_max_distance = default_circuit_wire_max_distance,
+        fast_replaceable_group = "mining-drill"
     }, -- entity
     {
       type = "corpse",

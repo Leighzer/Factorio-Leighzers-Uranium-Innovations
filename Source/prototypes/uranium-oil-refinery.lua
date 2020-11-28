@@ -16,7 +16,7 @@ data:extend({
     }, -- item
     {
         type = "recipe",
-        name = "oil-refinery",
+        name = "uranium-oil-refinery",
         category = "crafting-with-fluid",
         energy_required = 8,
         ingredients =
@@ -24,7 +24,7 @@ data:extend({
           {"steel-plate", 15},          
           {"refined-concrete", 10},
           {"processing-unit", 10},
-          --{"uranium-pump", 6}
+          {"uranium-pump", 5},
           {"uranium-235", 5},
           {type="fluid", name="sulfuric-acid", amount=200}
         },
@@ -276,7 +276,8 @@ data:extend({
           },
           rotate = false,
           orientation_to_variation = true
-        }
+        },
+        fast_replaceable_group = "oil-refinery"
     }, -- entity
     {
         type = "corpse",

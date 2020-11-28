@@ -21,7 +21,7 @@ data:extend({
         {
           {"steel-plate", 50},          
           {"processing-unit", 10},
-        --{"uranium-pump", 2}
+          {"uranium-pump", 2},
           {"uranium-235", 2},
           {type="fluid", name="sulfuric-acid", amount=100}
         },

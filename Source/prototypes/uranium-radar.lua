@@ -21,6 +21,7 @@ data:extend({
           {"processing-unit", 5},
           {"steel-plate", 10},
           {"copper-plate", 20},
+          {"radar", 2},
           {"uranium-235", 2},
           {type="fluid", name="sulfuric-acid", amount=100}
         },
@@ -161,7 +162,8 @@ data:extend({
           },
           rotate = false,
           orientation_to_variation = false
-        }
+        },
+        fast_replaceable_group = "radar"
     }, -- entity
     {
         type = "corpse",

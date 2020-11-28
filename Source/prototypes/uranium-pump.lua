@@ -16,7 +16,7 @@ data:extend({
     }, -- item
     {
         type = "recipe",
-        name = "pump",
+        name = "uranium-pump",
         category = "crafting-with-fluid",
         energy_required = 2,
         enabled = false,
@@ -29,7 +29,7 @@ data:extend({
           {"steel-plate", 5},
           {"pump", 1}
         },
-        result= "pump"
+        result= "uranium-pump"
     }, -- recipe
     {
         type = "pump",

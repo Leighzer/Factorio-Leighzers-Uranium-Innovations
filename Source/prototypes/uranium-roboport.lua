@@ -26,7 +26,7 @@ data:extend({
           {"uranium-235", 5},
           {type="fluid", name="sulfuric-acid", amount=250}
         },
-        result = "roboport"
+        result = "uranium-roboport"
     }, -- recipe
     {
         type = "roboport",
@@ -242,7 +242,8 @@ data:extend({
           },
           rotate = false,
           orientation_to_variation = false
-        }
+        },
+        fast_replaceable_group = "roboport"
     }, -- entity
     {
         type = "corpse",

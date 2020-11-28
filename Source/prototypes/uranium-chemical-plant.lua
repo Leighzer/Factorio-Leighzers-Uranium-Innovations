@@ -22,7 +22,7 @@ data:extend({
         {
           {"steel-plate", 10},          
           {"processing-unit", 10},
-          --{"uranium-pump", 2},
+          {"uranium-pump", 2},
           {"uranium-235", 2},
           {type="fluid", name="sulfuric-acid", amount = 100}
         },
@@ -390,7 +390,8 @@ data:extend({
           },
           rotate = false,
           orientation_to_variation = true
-        }
+        },
+        fast_replaceable_group = "chemical-plant"
     }, -- entity
     {
         type = "corpse",

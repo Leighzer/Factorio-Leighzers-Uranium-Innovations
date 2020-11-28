@@ -27,7 +27,7 @@ data:extend({
           {type="fluid", name="sulfuric-acid", amount=50},
           {"construction-robot", 1}
         },
-        result = "construction-robot"
+        result = "uranium-construction-robot"
     }, -- recipe
     {
         type = "construction-robot",

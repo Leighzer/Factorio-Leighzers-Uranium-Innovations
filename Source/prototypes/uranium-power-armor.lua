@@ -43,9 +43,9 @@ data:extend({
         enabled = false,
         energy_required = 30,
         ingredients = {
-            { "speed-module-3", 25},
-            { "productivity-module-3", 25},
-            { "effectivity-module-3", 25},            
+            {"speed-module-3", 25},
+            {"productivity-module-3", 25},
+            {"effectivity-module-3", 25},            
             {"processing-unit", 100},
             {"electric-engine-unit", 50},
             {"low-density-structure", 50},

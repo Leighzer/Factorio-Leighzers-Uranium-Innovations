@@ -16,7 +16,7 @@ data:extend({
     }, -- item
     {
         type = "recipe",
-        name = "logistic-robot",
+        name = "uranium-logistic-robot",
         category = "crafting-with-fluid",
         enabled = false,
         ingredients =
@@ -27,7 +27,7 @@ data:extend({
           {"uranium-235", 2},
           {type="fluid", name="sulfuric-acid", amount = 50}
         },
-        result = "logistic-robot"
+        result = "uranium-logistic-robot"
       }, -- recipe
       {
         type = "logistic-robot",

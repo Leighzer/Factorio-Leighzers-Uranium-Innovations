@@ -13,20 +13,26 @@ local uraniumAmmoTech = data.raw.technology["uranium-ammo"]
 if uraniumAmmoTech and uraniumAmmoTech.unit and uraniumAmmoTech.unit.ingredients and uraniumAmmoTech.prerequisites then
     table.insert(uraniumAmmoTech.unit.ingredients,{leighzermods.leighzeruraniuminnovations.nuclearSciencePack.name,1})
     table.insert(uraniumAmmoTech.prerequisites,leighzermods.leighzeruraniuminnovations.nuclearSciencePack.name)
+    -- remove uranium processing prereq, covered by the fact that nuclear science pack requires kovarex
+    for k,v in ipairs(data.raw.technology["uranium-ammo"].prerequisites) do
+        if v == "uranium-processing" then
+            table.remove(data.raw.technology["uranium-ammo"].prerequisites, k)
+        end
+    end
 end
 
 -- add tech as prereq to rocket - add science pack as unit to rocket tech
-local rocketSiloTech = data.raw.technology["rocket-silo"]
-if rocketSiloTech and rocketSiloTech.unit and rocketSiloTech.unit.ingredients and rocketSiloTech.prerequisites then
-    table.insert(rocketSiloTech.unit.ingredients,{leighzermods.leighzeruraniuminnovations.nuclearSciencePack.name,1})
-    table.insert(rocketSiloTech.prerequisites,leighzermods.leighzeruraniuminnovations.nuclearSciencePack.name)
-end
+-- local rocketSiloTech = data.raw.technology["rocket-silo"]
+-- if rocketSiloTech and rocketSiloTech.unit and rocketSiloTech.unit.ingredients and rocketSiloTech.prerequisites then
+--     table.insert(rocketSiloTech.unit.ingredients,{leighzermods.leighzeruraniuminnovations.nuclearSciencePack.name,1})
+--     table.insert(rocketSiloTech.prerequisites,leighzermods.leighzeruraniuminnovations.nuclearSciencePack.name)
+-- end
 
 -- add science pack to space science pack unit
-local spaceSciencePackTech = data.raw.technology["space-science-pack"]
-if spaceSciencePackTech and spaceSciencePackTech.unit and spaceSciencePackTech.unit.ingredients then
-    table.insert(spaceSciencePackTech.unit.ingredients,{leighzermods.leighzeruraniuminnovations.nuclearSciencePack.name,1})
-end
+-- local spaceSciencePackTech = data.raw.technology["space-science-pack"]
+-- if spaceSciencePackTech and spaceSciencePackTech.unit and spaceSciencePackTech.unit.ingredients then
+--     table.insert(spaceSciencePackTech.unit.ingredients,{leighzermods.leighzeruraniuminnovations.nuclearSciencePack.name,1})
+-- end
 
 -- add uranium science pack to all techs that have space science as part of their research
 for k,v in pairs(data.raw.technology) do

@@ -21,9 +21,10 @@ data:extend({
         energy_required = 8,
         ingredients =
         {
-          {"steel-plate", 15},          
-          {"refined-concrete", 10},
-          {"processing-unit", 10},
+          {"steel-plate", 50},          
+          {"refined-concrete", 50},
+          {"speed-module-2", 1},
+          {"effectivity-module-2", 1},
           {"uranium-pump", 5},
           {"uranium-235", 5},
           {type="fluid", name="sulfuric-acid", amount=200}

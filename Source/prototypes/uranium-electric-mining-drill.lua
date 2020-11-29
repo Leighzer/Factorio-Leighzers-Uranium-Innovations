@@ -113,11 +113,12 @@ data:extend({
         energy_required = 2,
         ingredients =
         {
-            {"processing-unit", 3},
-            {"steel-plate", 5},
+            {"speed-module-2", 1},
+            {"effectivity-module-2", 1},
+            {"iron-gear-wheel", 10},
+            {"steel-plate", 20},
             {"uranium-235", 2},
-            {type="fluid", name="sulfuric-acid", amount=100},
-            {"copper-plate", 10}
+            {type="fluid", name="sulfuric-acid", amount=100},            
         },
         result = "uranium-electric-mining-drill",
         enabled = false,

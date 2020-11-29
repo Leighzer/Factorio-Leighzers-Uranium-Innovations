@@ -18,9 +18,10 @@ data:extend({
         category = "crafting-with-fluid",
         ingredients = 
         {
-            {"steel-plate", 20},
-            {"processing-unit", 5}, 
-            {"refined-concrete", 10},
+            {"steel-plate", 50},
+            {"speed-module-2", 1},
+            {"effectivity-module-2", 1},
+            {"refined-concrete", 20},
             {"uranium-235", 2},
             {type="fluid", name="sulfuric-acid", amount=100}
         },

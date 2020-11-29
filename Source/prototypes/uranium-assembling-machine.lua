@@ -25,8 +25,8 @@ data:extend({
       {"uranium-235", 3},
       {name="sulfuric-acid", amount=100,type="fluid"},
       {"assembling-machine-3",1},
-      {"speed-module-3",1},
-      {"effectivity-module-3",1},
+      {"speed-module-2",1},
+      {"effectivity-module-2",1},
     },
     result = "uranium-assembling-machine"
   },

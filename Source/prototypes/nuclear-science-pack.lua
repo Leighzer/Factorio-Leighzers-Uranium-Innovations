@@ -50,4 +50,4 @@ local sciencePackTechUnit = {
       time = 30
 }
 local sciencePackTechPrereqs = {"kovarex-enrichment-process"}
-leighzermods.utils.createTechnology(leighzermods.leighzeruraniuminnovations.nuclearSciencePack.name,sciencePackTechIcons,true,sciencePackTechEffects,sciencePackTechUnit,sciencePackTechPrereqs,"c-b","Nuclear science pack","Allows research of powerful uranium weaponry and proper spaceflight.")
+leighzermods.utils.createTechnology(leighzermods.leighzeruraniuminnovations.nuclearSciencePack.name,sciencePackTechIcons,true,sciencePackTechEffects,sciencePackTechUnit,sciencePackTechPrereqs,"c-b",nil, nil)

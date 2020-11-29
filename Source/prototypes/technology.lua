@@ -1,3 +1,13 @@
+-- ordering
+-- drill d
+-- belt e
+-- furnace f
+-- assembler g
+-- refinery h
+-- robotics i 
+-- power armor j
+-- radar k
+
 -- logistics
 local uraniumLogisticsTech = {
     type = "technology",
@@ -22,7 +32,7 @@ local uraniumLogisticsTech = {
     prerequisites = {"kovarex-enrichment-process"},
     unit =
     {
-      count = 1500,
+      count = 2000,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -30,11 +40,12 @@ local uraniumLogisticsTech = {
         {"chemical-science-pack", 1},
         {"production-science-pack", 1}
       },
-      time = 30
+      time = 60
     },
-    order = "e-p-b-d"
+    order = "e-p-b-e"
   }
 
+-- weird I know, here for now in case I decide to add a setting to disable nuclear-science-pack for the player
 if mods["leighzernuclearsciencepack"] or true then
     uraniumLogisticsTech.prerequisites = {"nuclear-science-pack"}
     table.insert(uraniumLogisticsTech.unit.ingredients, {"nuclear-science-pack",1})
@@ -42,6 +53,10 @@ end
 
 if data.raw.technology["logistics-3"] then
   table.insert(uraniumLogisticsTech.prerequisites, "logistics-3")
+end
+
+if data.raw.technology["advanced-electronics-2"] then
+  table.insert(uraniumLogisticsTech.prerequisites, "advanced-electronics-2")
 end
 
 data:extend({
@@ -64,7 +79,7 @@ local uraniumAssemblerTech = {
   prerequisites = {"kovarex-enrichment-process"},
   unit =
   {
-    count = 1500,
+    count = 2500,
     ingredients =
     {
       {"automation-science-pack", 1},
@@ -72,9 +87,9 @@ local uraniumAssemblerTech = {
       {"chemical-science-pack", 1},
       {"production-science-pack", 1}
     },
-    time = 30
+    time = 60
   },
-  order = "e-p-b-e"
+  order = "e-p-b-g"
 }
 
 if mods["leighzernuclearsciencepack"] or true then
@@ -86,12 +101,12 @@ if data.raw.technology["automation-3"] then
 table.insert(uraniumAssemblerTech.prerequisites, "automation-3")
 end
 
-if data.raw.technology["speed-module-3"] then
-table.insert(uraniumAssemblerTech.prerequisites, "speed-module-3")
+if data.raw.technology["speed-module-2"] then
+table.insert(uraniumAssemblerTech.prerequisites, "speed-module-2")
 end
 
-if data.raw.technology["effectivity-module-3"] then
-table.insert(uraniumAssemblerTech.prerequisites, "effectivity-module-3")
+if data.raw.technology["effectivity-module-2"] then
+table.insert(uraniumAssemblerTech.prerequisites, "effectivity-module-2")
 end
 
 data:extend({
@@ -113,7 +128,7 @@ local uraniumAdvancedMaterialProcessingTech = {
   prerequisites = {"kovarex-enrichment-process"},
   unit =
   {
-    count = 1500,
+    count = 2000,
     ingredients =
     {
       {"automation-science-pack", 1},
@@ -121,7 +136,7 @@ local uraniumAdvancedMaterialProcessingTech = {
       {"chemical-science-pack", 1},
       {"production-science-pack", 1}
     },
-    time = 30
+    time = 45
   },
   order = "e-p-b-f"
 }
@@ -129,6 +144,14 @@ local uraniumAdvancedMaterialProcessingTech = {
 if mods["leighzernuclearsciencepack"] or true then
   uraniumAdvancedMaterialProcessingTech.prerequisites = {"nuclear-science-pack"}
   table.insert(uraniumAdvancedMaterialProcessingTech.unit.ingredients, {"nuclear-science-pack",1})
+end
+
+if data.raw.technology["speed-module-2"] then
+  table.insert(uraniumAdvancedMaterialProcessingTech.prerequisites, "speed-module-2")
+end
+  
+if data.raw.technology["effectivity-module-2"] then
+  table.insert(uraniumAdvancedMaterialProcessingTech.prerequisites, "effectivity-module-2")
 end
 
 data:extend({
@@ -162,7 +185,7 @@ local uraniumFluidProcessing = {
   prerequisites = {"kovarex-enrichment-process"},
   unit =
   {
-    count = 1500,
+    count = 5000,
     ingredients =
     {
       {"automation-science-pack", 1},
@@ -170,14 +193,30 @@ local uraniumFluidProcessing = {
       {"chemical-science-pack", 1},
       {"production-science-pack", 1}
     },
-    time = 30
+    time = 60
   },
-  order = "e-p-b-g"
+  order = "e-p-b-h"
 }
 
 if mods["leighzernuclearsciencepack"] or true then
   uraniumFluidProcessing.prerequisites = {"nuclear-science-pack"}
   table.insert(uraniumFluidProcessing.unit.ingredients, {"nuclear-science-pack",1})
+end
+
+if data.raw.technology["speed-module-2"] then
+  table.insert(uraniumFluidProcessing.prerequisites, "speed-module-2")
+end
+  
+if data.raw.technology["effectivity-module-2"] then
+  table.insert(uraniumFluidProcessing.prerequisites, "effectivity-module-2")
+end
+
+if data.raw.technology["coal-liquefaction"] then
+  table.insert(uraniumFluidProcessing.prerequisites, "coal-liquefaction")
+end
+
+if data.raw.technology["electric-engine"] then
+  table.insert(uraniumFluidProcessing.prerequisites, "electric-engine")
 end
 
 data:extend({
@@ -207,7 +246,7 @@ local uraniumRobotics = {
   prerequisites = {"kovarex-enrichment-process"},
   unit =
   {
-    count = 1500,
+    count = 5000,
     ingredients =
     {
       {"automation-science-pack", 1},
@@ -215,9 +254,9 @@ local uraniumRobotics = {
       {"chemical-science-pack", 1},
       {"utility-science-pack", 1}
     },
-    time = 30
+    time = 60
   },
-  order = "e-p-b-h"
+  order = "e-p-b-i"
 }
 
 if mods["leighzernuclearsciencepack"] or true then
@@ -227,6 +266,10 @@ end
 
 if data.raw.technology["logistic-system"] then
   table.insert(uraniumRobotics.prerequisites, "logistic-system")
+end
+
+if data.raw.technology["construction-robotics"] then
+  table.insert(uraniumRobotics.prerequisites, "construction-robotics")
 end
 
 data:extend({
@@ -258,12 +301,20 @@ local uraniumMining = {
     },
     time = 30
   },
-  order = "e-p-b-i"
+  order = "e-p-b-d"
 }
 
 if mods["leighzernuclearsciencepack"] or true then
   uraniumMining.prerequisites = {"nuclear-science-pack"}
   table.insert(uraniumMining.unit.ingredients, {"nuclear-science-pack",1})
+end
+
+if data.raw.technology["speed-module-2"] then
+  table.insert(uraniumMining.prerequisites, "speed-module-2")
+end
+  
+if data.raw.technology["effectivity-module-2"] then
+  table.insert(uraniumMining.prerequisites, "effectivity-module-2")
 end
 
 data:extend({
@@ -285,15 +336,17 @@ local uraniumPowerArmor = {
   prerequisites = {"kovarex-enrichment-process"},
   unit =
   {
-    count = 1500,
+    count = 2000,
     ingredients =
     {
       {"automation-science-pack", 1},
       {"logistic-science-pack", 1},
+      {"military-science-pack", 1},
       {"chemical-science-pack", 1},
-      {"utility-science-pack", 1}
+      {"utility-science-pack", 1},
+      {"space-science-pack", 1}
     },
-    time = 30
+    time = 45
   },
   order = "e-p-b-j"
 }
@@ -301,6 +354,26 @@ local uraniumPowerArmor = {
 if mods["leighzernuclearsciencepack"] or true then
   uraniumPowerArmor.prerequisites = {"nuclear-science-pack"}
   table.insert(uraniumPowerArmor.unit.ingredients, {"nuclear-science-pack",1})
+end
+
+if data.raw.technology["speed-module-3"] then
+  table.insert(uraniumPowerArmor.prerequisites, "speed-module-3")
+end
+  
+if data.raw.technology["productivity-module-3"] then
+  table.insert(uraniumPowerArmor.prerequisites, "productivity-module-3")
+end
+
+if data.raw.technology["effectivity-module-3"] then
+  table.insert(uraniumPowerArmor.prerequisites, "effectivity-module-3")
+end
+
+if data.raw.technology["space-science-pack"] then
+  table.insert(uraniumPowerArmor.prerequisites, "space-science-pack")
+end
+
+if data.raw.technology["power-armor-mk2"] then
+  table.insert(uraniumPowerArmor.prerequisites, "power-armor-mk2")
 end
 
 data:extend({
@@ -322,7 +395,7 @@ local uraniumRecon = {
   prerequisites = {"kovarex-enrichment-process"},
   unit =
   {
-    count = 1500,
+    count = 1000,
     ingredients =
     {
       {"automation-science-pack", 1},
@@ -342,6 +415,14 @@ end
 
 if data.raw.technology["military-4"] then
   table.insert(uraniumRecon.prerequisites, "military-4")
+end
+
+if data.raw.technology["speed-module-2"] then
+  table.insert(uraniumRecon.prerequisites, "speed-module-2")
+end
+  
+if data.raw.technology["productivity-module-2"] then
+  table.insert(uraniumRecon.prerequisites, "productivity-module-2")
 end
 
 data:extend({

@@ -22,7 +22,7 @@ data:extend({
         ingredients =
         {
           {"flying-robot-frame", 1},
-          {"processing-unit", 2},
+          {"speed-module", 1},
           {"uranium-235", 2},
           {type="fluid", name="sulfuric-acid", amount=50},
           {"construction-robot", 1}

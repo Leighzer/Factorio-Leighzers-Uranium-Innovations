@@ -23,10 +23,10 @@ data:extend({
         ingredients =
         {
           {"electric-engine-unit", 5},
-          {"processing-unit", 5},
+          {"speed-module", 5},
           {"uranium-235", 2},
           {type="fluid", name="sulfuric-acid", amount=50},
-          {"steel-plate", 5},
+          {"steel-plate", 10},
           {"pump", 1}
         },
         result= "uranium-pump"

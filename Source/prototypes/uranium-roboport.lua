@@ -22,7 +22,8 @@ data:extend({
         {
           {"steel-plate", 90},
           {"iron-gear-wheel", 90},
-          {"processing-unit", 90},
+          {"speed-module-2", 2},
+          {"effectivity-module-2", 2},
           {"uranium-235", 5},
           {type="fluid", name="sulfuric-acid", amount=250}
         },

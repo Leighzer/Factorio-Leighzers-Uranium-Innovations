@@ -18,14 +18,15 @@ data:extend({
         category = "crafting-with-fluid",
         ingredients =
         {
-          {"processing-unit", 5},
-          {"steel-plate", 10},
-          {"copper-plate", 20},
+          {"speed-module-2", 1},
+          {"productivity-module-2", 1},
+          {"steel-plate", 20},          
           {"radar", 2},
           {"uranium-235", 2},
           {type="fluid", name="sulfuric-acid", amount=100}
         },
-        result = "uranium-radar"
+        result = "uranium-radar",
+        enabled=false,
       }, -- recipe
       {
         type = "radar",

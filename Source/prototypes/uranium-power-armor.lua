@@ -45,10 +45,9 @@ data:extend({
         ingredients = {
             {"speed-module-3", 25},
             {"productivity-module-3", 25},
-            {"effectivity-module-3", 25},            
-            {"processing-unit", 100},
-            {"electric-engine-unit", 50},
-            {"low-density-structure", 50},
+            {"effectivity-module-3", 25},
+            {"low-density-structure", 100},
+            {"satellite", 1},
             {"uranium-235", 5},
             {type="fluid", name="sulfuric-acid", amount=100}
         },

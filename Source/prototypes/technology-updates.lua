@@ -37,10 +37,22 @@ end
 -- add uranium science pack to all techs that have space science as part of their research
 for k,v in pairs(data.raw.technology) do
     if v and v.unit and v.unit.ingredients then
-        for i,vv in ipairs(v.unit.ingredients) do
+
+        for i,vv in ipairs(v.unit.ingredients) do            
+
             if vv[1] and vv[1] == "space-science-pack" then
-                table.insert(v.unit.ingredients,{leighzermods.leighzeruraniuminnovations.nuclearSciencePack.name,1})
-                break
+                local hasNuclearSciencePack = false
+                for j,vvv in ipairs(v.unit.ingredients) do
+                    if vvv[1] and vvv[1] == "nuclear-science-pack" then
+                        hasNuclearSciencePack = true
+                        break
+                    end
+                end
+
+                if not hasNuclearSciencePack then
+                    table.insert(v.unit.ingredients,{leighzermods.leighzeruraniuminnovations.nuclearSciencePack.name,1})
+                    break
+                end 
             end
         end
     end

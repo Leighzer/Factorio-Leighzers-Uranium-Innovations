@@ -20,8 +20,9 @@ data:extend({
         enabled = false,
         ingredients =
         {
-          {"steel-plate", 10},          
-          {"processing-unit", 10},
+          {"steel-plate", 25},          
+          {"speed-module-2", 1},
+          {"effectivity-module-2", 1},
           {"uranium-pump", 2},
           {"uranium-235", 2},
           {type="fluid", name="sulfuric-acid", amount = 100}

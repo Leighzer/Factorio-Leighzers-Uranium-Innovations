@@ -23,7 +23,7 @@ data:extend({
         {
           {"flying-robot-frame", 1},
           {"speed-module", 1},
-          {"uranium-235", 2},
+          {"uranium-235", 1},
           {type="fluid", name="sulfuric-acid", amount=50},
           {"construction-robot", 1}
         },
@@ -43,15 +43,15 @@ data:extend({
             percent = 85
           }
         },
-        max_health = 100,
+        max_health = leighzermods.leighzeruraniuminnovations.constructionRobot.maxHealth, -- 100,
         collision_box = {{0, 0}, {0, 0}},
         selection_box = {{-0.5, -1.5}, {0.5, -0.5}},
         hit_visualization_box = {{-0.1, -1.1}, {0.1, -1.0}},
         damaged_trigger_effect = hit_effects.flying_robot(),
         dying_explosion = "medium-explosion", -- "construction-robot-explosion",
-        max_payload_size = 1,
-        speed = 0.06,
-        max_energy = "1.5MJ",
+        max_payload_size = leighzermods.leighzeruraniuminnovations.constructionRobot.maxPayloadSize, -- 1,
+        speed = leighzermods.leighzeruraniuminnovations.constructionRobot.speed, -- 0.06,
+        max_energy = leighzermods.leighzeruraniuminnovations.constructionRobot.maxEnergy, -- "1.5MJ",
         energy_per_tick = "0.05kJ",
         speed_multiplier_when_out_of_energy = 0.2,
         energy_per_move = "5kJ",

@@ -3,8 +3,7 @@ require("prototypes.uranium-transport-belt-pictures")
 local hit_effects = require ("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
 
-data:extend({  
-
+data:extend({
   {
     type = "item",
     name = "uranium-splitter",
@@ -15,13 +14,12 @@ data:extend({
     place_result = "uranium-splitter",
     stack_size = 50
   },
-
   {
     type = "recipe",
     name = "uranium-splitter",
     category = "crafting-with-fluid",
     enabled = false,
-    energy_required = 1,
+    energy_required = 2,
     ingredients =
     {
       {"processing-unit", 10},
@@ -32,7 +30,6 @@ data:extend({
     },
     result = "uranium-splitter"
   },
-
   {
       type = "splitter",
       name = "uranium-splitter",

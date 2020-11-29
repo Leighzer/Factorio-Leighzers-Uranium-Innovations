@@ -38,7 +38,7 @@ data:extend({
         icon_size = 64, icon_mipmaps = 4,
         flags = {"placeable-neutral", "player-creation"},
         minable = {mining_time = 0.2, result = "uranium-pump"},
-        max_health = 180,
+        max_health = leighzermods.leighzeruraniuminnovations.pump.maxHealth,
         fast_replaceable_group = "pipe",
         corpse = "uranium-pump-remnants",
         dying_explosion = "medium-explosion", -- "pump-explosion",
@@ -81,10 +81,10 @@ data:extend({
         {
           type = "electric",
           usage_priority = "secondary-input",
-          drain = "1kW"
+          drain = leighzermods.leighzeruraniuminnovations.pump.drain -- "1kW"
         },
-        energy_usage = "29kW",
-        pumping_speed = 200,
+        energy_usage = leighzermods.leighzeruraniuminnovations.pump.energyUsage,-- "29kW",
+        pumping_speed = leighzermods.leighzeruraniuminnovations.pump.pumpingSpeed, -- 200,
         vehicle_impact_sound = sounds.generic_impact,
         open_sound = sounds.machine_open,
         close_sound = sounds.machine_close,

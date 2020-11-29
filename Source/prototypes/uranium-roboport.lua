@@ -36,7 +36,7 @@ data:extend({
         icon_size = 64, icon_mipmaps = 4,
         flags = {"placeable-player", "player-creation"},
         minable = {mining_time = 0.1, result = "uranium-roboport"},
-        max_health = 500,
+        max_health = leighzermods.leighzeruraniuminnovations.roboport.maxHealth,
         corpse = "uranium-roboport-remnants",
         dying_explosion = "medium-explosion", -- "roboport-explosion",
         collision_box = {{-1.7, -1.7}, {1.7, 1.7}},
@@ -57,22 +57,23 @@ data:extend({
         {
           type = "electric",
           usage_priority = "secondary-input",
-          input_flow_limit = "5MW",
-          buffer_capacity = "100MJ"
+          input_flow_limit = leighzermods.leighzeruraniuminnovations.roboport.inputFlowLimit, -- "5MW",
+          buffer_capacity = leighzermods.leighzeruraniuminnovations.roboport.bufferCapacity, -- "100MJ"
         },
-        recharge_minimum = "40MJ",
-        energy_usage = "50kW",
+        recharge_minimum = leighzermods.leighzeruraniuminnovations.roboport.rechargeMinimum, -- "40MJ",
+        energy_usage = leighzermods.leighzeruraniuminnovations.roboport.energyUsage, -- "50kW",
         -- per one charge slot
-        charging_energy = "1000kW",
-        logistics_radius = 25,
-        construction_radius = 55,
-        charge_approach_distance = 5,
-        robot_slots_count = 7,
-        material_slots_count = 7,
+        charging_energy = leighzermods.leighzeruraniuminnovations.roboport.chargingEnergy, -- "1000kW",
+        logistics_radius = leighzermods.leighzeruraniuminnovations.roboport.logisticsRadius, -- 25,
+        construction_radius = leighzermods.leighzeruraniuminnovations.roboport.constructionRadius, -- 55,
+        charge_approach_distance = leighzermods.leighzeruraniuminnovations.roboport.chargeApproachDistance, -- 5,
+        robot_slots_count = leighzermods.leighzeruraniuminnovations.roboport.robotSlotsCount, -- 7,
+        material_slots_count = leighzermods.leighzeruraniuminnovations.roboport.materialSlotsCount, -- 7,
         stationing_offset = {0, 0},
         charging_offsets =
         {
-          {-1.5, -0.5}, {1.5, -0.5}, {1.5, 1.5}, {-1.5, 1.5}
+          {-1.5, -0.5}, {1.5, -0.5}, {1.5, 1.5}, {-1.5, 1.5},
+          {-1.5, -0.5}, {1.5, -0.5}, {1.5, 1.5}, {-1.5, 1.5} -- double the charge slots          
         },
         base =
         {

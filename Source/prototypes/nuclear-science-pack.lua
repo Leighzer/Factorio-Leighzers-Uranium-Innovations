@@ -29,8 +29,9 @@ data:extend({
 -- create science pack recipe
 local sciencePackIngredients = {
     {"heat-exchanger",1},
-    {"steam-turbine",1},
-    {"uranium-fuel-cell",1}
+    {"steam-turbine",2},
+    {"heat-pipe",5},
+    {"uranium-fuel-cell",1},
 }
 leighzermods.utils.createRecipe(leighzermods.leighzeruraniuminnovations.nuclearSciencePack.name,leighzermods.leighzeruraniuminnovations.nuclearSciencePack.energyRequired, false, "crafting",sciencePackIngredients,leighzermods.leighzeruraniuminnovations.nuclearSciencePack.name,leighzermods.leighzeruraniuminnovations.nuclearSciencePack.resultCount,leighzermods.leighzeruraniuminnovations.nuclearSciencePack.subgroup,leighzermods.leighzeruraniuminnovations.nuclearSciencePack.order,true)
 

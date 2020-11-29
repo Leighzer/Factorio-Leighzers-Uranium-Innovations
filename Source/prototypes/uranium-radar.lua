@@ -35,7 +35,7 @@ data:extend({
         icon_size = 64, icon_mipmaps = 4,
         flags = {"placeable-player", "player-creation"},
         minable = {mining_time = 0.1, result = "uranium-radar"},
-        max_health = 250,
+        max_health = leighzermods.leighzeruraniuminnovations.radar.maxHealth,
         corpse = "uranium-radar-remnants",
         dying_explosion = "medium-explosion", -- "radar-explosion",
         resistances =
@@ -52,16 +52,16 @@ data:extend({
         collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
         selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
         damaged_trigger_effect = hit_effects.entity(),
-        energy_per_sector = "10MJ",
-        max_distance_of_sector_revealed = 14,
-        max_distance_of_nearby_sector_revealed = 3,
-        energy_per_nearby_scan = "250kJ",
+        energy_per_sector = leighzermods.leighzeruraniuminnovations.radar.energyPerSector, -- "10MJ",
+        max_distance_of_sector_revealed = leighzermods.leighzeruraniuminnovations.radar.maxDistanceOfSectorRevealed, -- 14,
+        max_distance_of_nearby_sector_revealed = leighzermods.leighzeruraniuminnovations.radar.maxDistanceOfNearbySectorRevealed, -- 3,
+        energy_per_nearby_scan = leighzermods.leighzeruraniuminnovations.radar.energyPerNearbyScan, -- "250kJ",
         energy_source =
         {
           type = "electric",
           usage_priority = "secondary-input"
         },
-        energy_usage = "300kW",
+        energy_usage = leighzermods.leighzeruraniuminnovations.radar.energyUsage, -- "300kW",
         integration_patch =
         {
           filename = "__base__/graphics/entity/radar/radar-integration.png",
@@ -148,7 +148,7 @@ data:extend({
         use_doppler_shift = false
         },
         radius_minimap_visualisation_color = { r = 0.059, g = 0.092, b = 0.235, a = 0.275 },
-        rotation_speed = 0.01,
+        rotation_speed = leighzermods.leighzeruraniuminnovations.radar.rotationSpeed, -- 0.01,
         water_reflection =
         {
           pictures =

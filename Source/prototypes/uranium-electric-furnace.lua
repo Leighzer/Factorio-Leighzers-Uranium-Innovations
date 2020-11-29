@@ -16,9 +16,9 @@ data:extend({
         type = "recipe",
         name = "uranium-electric-furnace",
         category = "crafting-with-fluid",
-        ingredients = 
+        ingredients =
         {
-            {"steel-plate", 50},
+            {"steel-plate", 25},
             {"speed-module-2", 1},
             {"effectivity-module-2", 1},
             {"refined-concrete", 20},
@@ -36,7 +36,7 @@ data:extend({
         icon_size = 64, icon_mipmaps = 4,
         flags = {"placeable-neutral", "placeable-player", "player-creation"},
         minable = {mining_time = 0.2, result = "uranium-electric-furnace"},
-        max_health = 350,
+        max_health = leighzermods.leighzeruraniuminnovations.electricFurnace.maxHealth, -- 350
         corpse = "uranium-electric-furnace-remnants",
         dying_explosion = "medium-explosion", -- "electric-furnace-explosion",
         resistances =
@@ -51,20 +51,20 @@ data:extend({
         damaged_trigger_effect = hit_effects.entity(),
         module_specification =
         {
-          module_slots = 2,
+          module_slots = leighzermods.leighzeruraniuminnovations.electricFurnace.moduleSlots, -- 2
           module_info_icon_shift = {0, 0.8}
         },
         allowed_effects = {"consumption", "speed", "productivity", "pollution"},
         crafting_categories = {"smelting"},
         result_inventory_size = 1,
-        crafting_speed = 2,
-        energy_usage = "180kW",
+        crafting_speed = leighzermods.leighzeruraniuminnovations.electricFurnace.craftingSpeed, -- 2
+        energy_usage = leighzermods.leighzeruraniuminnovations.electricFurnace.energyUsage, -- "180kW",
         source_inventory_size = 1,
         energy_source =
         {
           type = "electric",
           usage_priority = "secondary-input",
-          emissions_per_minute = 1
+          emissions_per_minute = leighzermods.leighzeruraniuminnovations.electricFurnace.emmisionsPerMinute -- 1
         },
         vehicle_impact_sound = sounds.generic_impact,
         open_sound = sounds.machine_open,

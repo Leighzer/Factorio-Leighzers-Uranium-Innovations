@@ -14,7 +14,6 @@ data:extend({
     place_result = "uranium-assembling-machine",
     stack_size = 50
   },
-
   {
     type = "recipe",
     name = "uranium-assembling-machine",
@@ -29,18 +28,18 @@ data:extend({
       {"effectivity-module-2",1},
     },
     result = "uranium-assembling-machine"
-  },
-      
+  },      
   {
     type = "assembling-machine",
     name = "uranium-assembling-machine",
     icon = "__leighzeruraniuminnovations__/graphics/icons/uranium-assembling-machine.png",
     icon_size = 64, icon_mipmaps = 4,
-    flags = {"placeable-neutral", "placeable-player", "player-creation"},
+    flags = {"placeable-neutral","placeable-player", "player-creation"},
     minable = {mining_time = 0.2, result = "uranium-assembling-machine"},
-    max_health = 450,
+    max_health = leighzermods.leighzeruraniuminnovations.assemblingMachine.maxHealth,
     corpse = "uranium-assembling-machine-remnants",
-    dying_explosion = "medium-explosion",
+    dying_explosion = "uranium-assembling-machine", -- "assembling-machine-3-explosion",
+    alert_icon_shift = util.by_pixel(-3, -12),
     resistances =
     {
       {
@@ -70,11 +69,27 @@ data:extend({
       },
       off_when_no_fluid_recipe = true
     },
+    open_sound = sounds.machine_open,
+    close_sound = sounds.machine_close,
+    vehicle_impact_sound = sounds.generic_impact,
+    working_sound =
+    {
+      sound =
+      {
+        {
+          filename = "__base__/sound/assembling-machine-t3-1.ogg",
+          volume = 0.45
+        }
+      },
+      audible_distance_modifier = 0.5,
+      fade_in_ticks = 4,
+      fade_out_ticks = 20
+    },
     collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     damaged_trigger_effect = hit_effects.entity(),
-    fast_replaceable_group = "assembling-machine",    
-    alert_icon_shift = util.by_pixel(-3, -12),
+    drawing_box = {{-1.5, -1.7}, {1.5, 1.5}},
+    fast_replaceable_group = "assembling-machine",
     animation =
     {
       layers =
@@ -123,42 +138,21 @@ data:extend({
         }
       }
     },
+
     crafting_categories = {"basic-crafting", "crafting", "advanced-crafting", "crafting-with-fluid"},
     crafting_speed = leighzermods.leighzeruraniuminnovations.assemblingMachine.craftingSpeed,
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 1,      
+      emissions_per_minute = leighzermods.leighzeruraniuminnovations.assemblingMachine.emmisionsPerMinute
     },
-    energy_usage = "750kW",
+    energy_usage = leighzermods.leighzeruraniuminnovations.assemblingMachine.energyUsage,
     module_specification =
     {
       module_slots = leighzermods.leighzeruraniuminnovations.assemblingMachine.moduleSlots
     },
-    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
-    open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.6 },
-    close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.6 },
-    vehicle_impact_sound = sounds.generic_impact,
-    working_sound =
-    {
-      sound =
-      {
-        {
-          filename = "__base__/sound/assembling-machine-t1-1.ogg",
-          volume = 0.8
-        },
-        {
-          filename = "__base__/sound/assembling-machine-t1-2.ogg",
-          volume = 0.8
-        }
-      },
-      --idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.3 },
-      apparent_volume = 1.5,
-      --max_sounds_per_type = 2,
-      fade_in_ticks = 10,
-      fade_out_ticks = 30
-    }
+    allowed_effects = {"consumption", "speed", "productivity", "pollution"}
   },
   {
     type = "corpse",

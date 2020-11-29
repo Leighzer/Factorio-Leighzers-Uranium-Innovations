@@ -21,11 +21,11 @@ data:extend({
     name = "uranium-underground-belt",
     category = "crafting-with-fluid",
     enabled = false,
-    energy_required = 1,
+    energy_required = 2,
     ingredients =
     {
       {"express-underground-belt",2},
-      {"steel-plate",160},
+      {"steel-plate",80},
       {"uranium-235",10},
       {name="sulfuric-acid",amount=100,type="fluid"}
     },

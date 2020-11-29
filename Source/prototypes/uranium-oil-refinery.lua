@@ -39,7 +39,7 @@ data:extend({
         icon_size = 64, icon_mipmaps = 4,
         flags = {"placeable-neutral","player-creation"},
         minable = {mining_time = 0.2, result = "oil-refinery"},
-        max_health = 350,
+        max_health = leighzermods.leighzeruraniuminnovations.oilRefinery.maxHealth,
         corpse = "uranium-oil-refinery-remnants",
         dying_explosion = "medium-explosion", -- "oil-refinery-explosion",
         collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
@@ -48,19 +48,19 @@ data:extend({
         drawing_box = {{-2.5, -2.8}, {2.5, 2.5}},
         module_specification =
         {
-          module_slots = 3
+          module_slots = leighzermods.leighzeruraniuminnovations.chemicalPlant.moduleSlots
         },
         scale_entity_info_icon = true,
         allowed_effects = {"consumption", "speed", "productivity", "pollution"},
         crafting_categories = {"oil-processing"},
-        crafting_speed = 1,
+        crafting_speed = leighzermods.leighzeruraniuminnovations.oilRefinery.craftingSpeed,
         energy_source =
         {
           type = "electric",
           usage_priority = "secondary-input",
-          emissions_per_minute = 6
+          emissions_per_minute = leighzermods.leighzeruraniuminnovations.chemicalPlant.emissionsPerMinute
         },
-        energy_usage = "420kW",
+        energy_usage = leighzermods.leighzeruraniuminnovations.oilRefinery.energyUsage, -- "420kW",
     
         animation = make_4way_animation_from_spritesheet(
         {

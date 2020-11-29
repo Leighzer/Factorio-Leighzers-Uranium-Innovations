@@ -36,7 +36,7 @@ data:extend({
         icon_size = 64, icon_mipmaps = 4,
         flags = {"placeable-neutral","placeable-player", "player-creation"},
         minable = {mining_time = 0.1, result = "uranium-chemical-plant"},
-        max_health = 310,
+        max_health = leighzermods.leighzeruraniuminnovations.chemicalPlant.maxHealth,
         corpse = "uranium-chemical-plant-remnants",
         dying_explosion = "medium-explosion", -- "chemical-plant-explosion",
         collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
@@ -344,9 +344,9 @@ data:extend({
         {
           type = "electric",
           usage_priority = "secondary-input",
-          emissions_per_minute = 2
+          emissions_per_minute = leighzermods.leighzeruraniuminnovations.chemicalPlant.emmisionsPerMinute
         },
-        energy_usage = "500kW", -- "210kW",
+        energy_usage = leighzermods.leighzeruraniuminnovations.chemicalPlant.energyUsage, -- "210kW",
         crafting_categories = {"chemistry"},
         fluid_boxes =
         {

@@ -130,7 +130,7 @@ data:extend({
         icon_size = 64, icon_mipmaps = 4,
         flags = {"placeable-neutral", "player-creation"},
         minable = {mining_time = 0.3, result = "uranium-electric-mining-drill"},
-        max_health = 300,
+        max_health = leighzermods.leighzeruraniuminnovations.electricMiningDrill.maxHealth, -- 300
         resource_categories = {"basic-solid"},
         corpse = "uranium-electric-mining-drill-remnants",
         dying_explosion = "medium-explosion", -- "electric-mining-drill-explosion",
@@ -140,7 +140,7 @@ data:extend({
         input_fluid_box = (not data.is_demo) and
         {
           production_type = "input-output",
-          pipe_picture = uraniumassemblerpipepictures(),
+          pipe_picture = assembler3pipepictures(),
           pipe_covers = pipecoverspictures(),
           base_area = 1,
           height = 2,
@@ -2321,19 +2321,19 @@ data:extend({
           }
         },
     
-        mining_speed = 0.5,
+        mining_speed = leighzermods.leighzeruraniuminnovations.electricMiningDrill.miningSpeed, -- 0.5,
         energy_source =
         {
           type = "electric",
-          emissions_per_minute = 10,
+          emissions_per_minute = leighzermods.leighzeruraniuminnovations.electricMiningDrill.emmisionsPerMinute, -- 10,
           usage_priority = "secondary-input"
         },
-        energy_usage = "90kW",
+        energy_usage = leighzermods.leighzeruraniuminnovations.electricMiningDrill.energyUsage, -- "90kW",
         resource_searching_radius = 2.49,
         vector_to_place_result = {0, -1.85},
         module_specification =
         {
-          module_slots = 3
+          module_slots = leighzermods.leighzeruraniuminnovations.electricMiningDrill.moduleSlots, -- 3
         },
         radius_visualisation_picture =
         {

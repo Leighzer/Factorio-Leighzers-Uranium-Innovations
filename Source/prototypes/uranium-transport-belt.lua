@@ -25,7 +25,7 @@ data:extend({
       {"express-transport-belt", 1},
       {"uranium-235", 1},
       {name="sulfuric-acid", amount=50, type="fluid"},
-      {"steel-plate",20}
+      {"steel-plate",10}
     },
     result = "uranium-transport-belt"    
   },

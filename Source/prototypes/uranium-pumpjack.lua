@@ -38,7 +38,7 @@ data:extend({
         flags = {"placeable-neutral", "player-creation"},
         minable = {mining_time = 0.5, result = "uranium-pumpjack"},
         resource_categories = {"basic-fluid"},
-        max_health = 200,
+        max_health = leighzermods.leighzeruraniuminnovations.pumpjack.maxHealth,
         corpse = "uranium-pumpjack-remnants",
         dying_explosion = "medium-explosion", -- "pumpjack-explosion",
         collision_box = {{ -1.2, -1.2}, {1.2, 1.2}},
@@ -48,7 +48,7 @@ data:extend({
         energy_source =
         {
           type = "electric",
-          emissions_per_minute = 10,
+          emissions_per_minute = leighzermods.leighzeruraniuminnovations.pumpjack.emmisionsPerMinute, -- 10,
           usage_priority = "secondary-input"
         },
         output_fluid_box =
@@ -63,13 +63,13 @@ data:extend({
             }
           }
         },
-        energy_usage = "90kW",
-        mining_speed = 1,
+        energy_usage = leighzermods.leighzeruraniuminnovations.pumpjack.energyUsage, -- "90kW",
+        mining_speed = leighzermods.leighzeruraniuminnovations.pumpjack.miningSpeed, -- 1,
         resource_searching_radius = 0.49,
         vector_to_place_result = {0, 0},
         module_specification =
         {
-          module_slots = 2
+          module_slots = leighzermods.leighzeruraniuminnovations.pumpjack.moduleSlots, -- 2
         },
         radius_visualisation_picture =
         {

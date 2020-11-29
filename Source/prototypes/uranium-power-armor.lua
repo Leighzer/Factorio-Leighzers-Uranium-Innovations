@@ -1,3 +1,16 @@
+-- find power armor mk2 animation, add our armor to list of armors that will use the mk2 character animation
+-- adapted and modified code from "Power Armor MK3" by jimmy_1283
+for _, animation in ipairs(data.raw["character"]["character"]["animations"]) do
+  if animation.armors then
+    for _, armor in ipairs(animation.armors) do
+      if armor == "power-armor-mk2" then
+        table.insert(animation.armors, "uranium-power-armor")    
+        break
+      end
+    end
+  end
+end
+
 data:extend({
     {
         type = "armor",

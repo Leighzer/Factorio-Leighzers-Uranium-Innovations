@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+  Changes:
+    - Improved thumbnail.
+  Bugfixes:
+    - Add nuclear-science-pack to regular lab input so that the lab can consume the pack (whoops!).
+---------------------------------------------------------------------------------------------------
 Version: 0.1.0
   Changes:
     - Initial release.

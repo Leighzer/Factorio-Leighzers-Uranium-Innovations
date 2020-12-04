@@ -25,6 +25,19 @@ local sciencePackTool = {
 data:extend({
     sciencePackTool
 })
+if data.raw["lab"]["lab"] then
+    local utilScienceFound = false
+    for k,v in ipairs(data.raw["lab"]["lab"].inputs) do
+        if v == "utility-science-pack" then
+            utilScienceFound = true
+            table.insert(data.raw["lab"]["lab"].inputs, k + 1, "nuclear-science-pack")
+            break
+        end
+    end
+    if not utilScienceFound then
+        table.insert(data.raw["lab"]["lab"].inputs,"nuclear-science-pack") -- insert at end
+    end
+end
 
 -- create science pack recipe
 local sciencePackIngredients = {

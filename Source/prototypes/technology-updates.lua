@@ -22,17 +22,17 @@ if uraniumAmmoTech and uraniumAmmoTech.unit and uraniumAmmoTech.unit.ingredients
 end
 
 -- add tech as prereq to rocket - add science pack as unit to rocket tech
--- local rocketSiloTech = data.raw.technology["rocket-silo"]
--- if rocketSiloTech and rocketSiloTech.unit and rocketSiloTech.unit.ingredients and rocketSiloTech.prerequisites then
---     table.insert(rocketSiloTech.unit.ingredients,{leighzermods.leighzeruraniuminnovations.nuclearSciencePack.name,1})
---     table.insert(rocketSiloTech.prerequisites,leighzermods.leighzeruraniuminnovations.nuclearSciencePack.name)
--- end
+local rocketSiloTech = data.raw.technology["rocket-silo"]
+if rocketSiloTech and rocketSiloTech.unit and rocketSiloTech.unit.ingredients and rocketSiloTech.prerequisites then
+    table.insert(rocketSiloTech.unit.ingredients,{leighzermods.leighzeruraniuminnovations.nuclearSciencePack.name,1})
+    table.insert(rocketSiloTech.prerequisites,leighzermods.leighzeruraniuminnovations.nuclearSciencePack.name)
+end
 
 -- add science pack to space science pack unit
--- local spaceSciencePackTech = data.raw.technology["space-science-pack"]
--- if spaceSciencePackTech and spaceSciencePackTech.unit and spaceSciencePackTech.unit.ingredients then
---     table.insert(spaceSciencePackTech.unit.ingredients,{leighzermods.leighzeruraniuminnovations.nuclearSciencePack.name,1})
--- end
+local spaceSciencePackTech = data.raw.technology["space-science-pack"]
+if spaceSciencePackTech and spaceSciencePackTech.unit and spaceSciencePackTech.unit.ingredients then
+    table.insert(spaceSciencePackTech.unit.ingredients,{leighzermods.leighzeruraniuminnovations.nuclearSciencePack.name,1})
+end
 
 -- add uranium science pack to all techs that have space science as part of their research
 for k,v in pairs(data.raw.technology) do

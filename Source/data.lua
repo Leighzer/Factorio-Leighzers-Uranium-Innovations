@@ -74,6 +74,17 @@ if not leighzermods.leighzeruraniuminnovations then
     leighzermods.leighzeruraniuminnovations.oilRefinery.energyUsage = "1MW"
     leighzermods.leighzeruraniuminnovations.oilRefinery.moduleSlots = 5
 
+    leighzermods.leighzeruraniuminnovations.pipe = {}
+    leighzermods.leighzeruraniuminnovations.pipe.maxHealth = 125
+    leighzermods.leighzeruraniuminnovations.pipe.baseArea = 1 * 2
+    leighzermods.leighzeruraniuminnovations.pipe.height = 1 -- orig
+
+    leighzermods.leighzeruraniuminnovations.pipeToUnderground = {}
+    leighzermods.leighzeruraniuminnovations.pipeToUnderground.maxHealth = 175
+    leighzermods.leighzeruraniuminnovations.pipeToUnderground.baseArea = 1 * 2
+    leighzermods.leighzeruraniuminnovations.pipeToUnderground.height = 1 -- orig
+    leighzermods.leighzeruraniuminnovations.pipeToUnderground.maxUndergroundDistance = 12 -- 10
+
     leighzermods.leighzeruraniuminnovations.powerArmor = {}
 
     leighzermods.leighzeruraniuminnovations.pump = {}
@@ -96,7 +107,11 @@ if not leighzermods.leighzeruraniuminnovations then
     leighzermods.leighzeruraniuminnovations.radar.maxDistanceOfNearbySectorRevealed = 6
     leighzermods.leighzeruraniuminnovations.radar.energyPerNearbyScan = "1MJ"
     leighzermods.leighzeruraniuminnovations.radar.energyUsage = "1MW" 
-    leighzermods.leighzeruraniuminnovations.radar.rotationSpeed = 0.01 * 1.5 
+    leighzermods.leighzeruraniuminnovations.radar.rotationSpeed = 0.01 * 1.5
+
+    leighzermods.leighzeruraniuminnovations.refinedConcrete = {}
+    leighzermods.leighzeruraniuminnovations.refinedConcrete.mapColor = {r=57/255, g=170/255, b=0/255}
+    leighzermods.leighzeruraniuminnovations.refinedConcrete.walkingSpeedModifier = 2
 
     leighzermods.leighzeruraniuminnovations.roboport = {}
     leighzermods.leighzeruraniuminnovations.roboport.maxHealth = 600
@@ -110,6 +125,11 @@ if not leighzermods.leighzeruraniuminnovations then
     leighzermods.leighzeruraniuminnovations.roboport.chargeApproachDistance = 5 * 2
     leighzermods.leighzeruraniuminnovations.roboport.robotSlotsCount = 10
     leighzermods.leighzeruraniuminnovations.roboport.materialSlotsCount = leighzermods.leighzeruraniuminnovations.roboport.robotSlotsCount
+
+    leighzermods.leighzeruraniuminnovations.storageTank = {}
+    leighzermods.leighzeruraniuminnovations.storageTank.maxHealth = 575
+    leighzermods.leighzeruraniuminnovations.storageTank.baseArea = 250 * 2
+    leighzermods.leighzeruraniuminnovations.storageTank.height = 1 -- 1
 
     leighzermods.leighzeruraniuminnovations.logistics = {}
     leighzermods.leighzeruraniuminnovations.logistics.beltSpeed = 0.03125 * 5 -- 5x regular belt speed 75/s 4500/min
@@ -127,12 +147,16 @@ require("prototypes.uranium-electric-mining-drill")
 require("prototypes.uranium-loader")
 require("prototypes.uranium-logistic-robot")
 require("prototypes.uranium-oil-refinery")
+require("prototypes.uranium-pipe")
+require("prototypes.uranium-pipe-to-ground")
 require("prototypes.uranium-power-armor")
 require("prototypes.uranium-pump")
 require("prototypes.uranium-pumpjack")
 require("prototypes.uranium-radar")
 require("prototypes.uranium-roboport")
 require("prototypes.uranium-splitter")
+require("prototypes.uranium-storage-tank")
+--require("prototypes.uranium-tiles")
 require("prototypes.uranium-transport-belt")
 require("prototypes.uranium-underground-belt")
 --load in technologies

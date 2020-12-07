@@ -1,5 +1,3 @@
-require("__base__.prototypes.entity.pipecovers")
-
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
 
@@ -232,33 +230,33 @@ data:extend({
         {
           {
             production_type = "input",
-            pipe_covers = pipecoverspictures(),
+            pipe_covers = uraniumpipecoverspictures(),
             base_area = 10,
             base_level = -1,
             pipe_connections = {{ type="input", position = {-1, 3} }}
           },
           {
             production_type = "input",
-            pipe_covers = pipecoverspictures(),
+            pipe_covers = uraniumpipecoverspictures(),
             base_area = 10,
             base_level = -1,
             pipe_connections = {{ type="input", position = {1, 3} }}
           },
           {
             production_type = "output",
-            pipe_covers = pipecoverspictures(),
+            pipe_covers = uraniumpipecoverspictures(),
             base_level = 1,
             pipe_connections = {{ position = {-2, -3} }}
           },
           {
             production_type = "output",
-            pipe_covers = pipecoverspictures(),
+            pipe_covers = uraniumpipecoverspictures(),
             base_level = 1,
             pipe_connections = {{ position = {0, -3} }}
           },
           {
             production_type = "output",
-            pipe_covers = pipecoverspictures(),
+            pipe_covers = uraniumpipecoverspictures(),
             base_level = 1,
             pipe_connections = {{ position = {2, -3} }}
           }

@@ -188,7 +188,8 @@ data:extend({
           },
           rotate = false,
           orientation_to_variation = false
-        }
+        },
+        fast_replaceable_group = "storage-tank"
     }, -- entity
     {
         type = "corpse",

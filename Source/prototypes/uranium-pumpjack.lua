@@ -55,7 +55,7 @@ data:extend({
         {
           base_area = 10,
           base_level = 1,
-          pipe_covers = pipecoverspictures(),
+          pipe_covers = uraniumpipecoverspictures(),
           pipe_connections =
           {
             {

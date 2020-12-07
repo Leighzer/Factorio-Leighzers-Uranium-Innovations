@@ -22,6 +22,14 @@ if data.raw["assembling-machine"]["oil-refinery"] then
     data.raw["assembling-machine"]["oil-refinery"].next_upgrade = "uranium-oil-refinery"
 end
 
+if data.raw["pipe"]["pipe"] then
+    data.raw["pipe"]["pipe"].next_upgrade = "uranium-pipe"
+end
+
+if data.raw["pipe-to-ground"]["pipe-to-ground"] then
+    data.raw["pipe-to-ground"]["pipe-to-ground"].next_upgrade = "uranium-pipe-to-ground"
+end
+
 if data.raw["pump"]["pump"] then
     data.raw["pump"]["pump"].next_upgrade = "uranium-pump"
 end
@@ -43,6 +51,11 @@ end
 
 if data.raw.splitter["express-splitter"] then
     data.raw.splitter["express-splitter"].next_upgrade = "uranium-splitter"
+end
+
+if data.raw["storage-tank"]["storage-tank"] then
+    data.raw["storage-tank"]["storage-tank"].fast_replaceable_group = "storage-tank"
+    data.raw["storage-tank"]["storage-tank"].next_upgrade = "uranium-storage-tank"
 end
 
 if data.raw["transport-belt"]["express-transport-belt"] then

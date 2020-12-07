@@ -175,7 +175,7 @@ local uraniumFluidHandling = {
   prerequisites = {"kovarex-enrichment-process"},
   unit =
   {
-    count = 1000,
+    count = 1500,
     ingredients =
     {
       {"automation-science-pack", 1},
@@ -183,7 +183,7 @@ local uraniumFluidHandling = {
       {"chemical-science-pack", 1},
       {"production-science-pack", 1}
     },
-    time = 60
+    time = 30
   },
   order = "k-b-e"
 }

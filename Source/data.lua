@@ -136,6 +136,9 @@ if not leighzermods.leighzeruraniuminnovations then
     leighzermods.leighzeruraniuminnovations.logistics.undergroundBeltMaxLength = 11 -- following pattern 5, 7, 9, => 11 for reg, fast, express => uranium
 end
 
+-- load in global used by our uranium entities
+require ("prototypes.uraniumpipecovers")
+
 --load in items, recipes, entities, remnant entities,
 require("prototypes.extra-large-equipment-grid")
 require("prototypes.nuclear-science-pack")
@@ -156,7 +159,6 @@ require("prototypes.uranium-radar")
 require("prototypes.uranium-roboport")
 require("prototypes.uranium-splitter")
 require("prototypes.uranium-storage-tank")
---require("prototypes.uranium-tiles")
 require("prototypes.uranium-transport-belt")
 require("prototypes.uranium-underground-belt")
 --load in technologies

@@ -1,9 +1,12 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.2
   Changes:
-    - Add uranium fluid handling tech that unlocks uranium pipe, pipe to underground, and storage tank. Also unlocks uranium pump.
+    - Add uranium fluid handling tech that unlocks uranium pipe, pipe to underground, and storage tank.    
     - Make uranium fluid handling prereq to uranium fluid processing.    
+    - Remove uranium pump unlock from uranium fluid processing.
+    - Add uranium pump unlock to uranium fluid handling.
     - Revert change - make nuclear science pack prereq to space science.
+    - Remove unnecessary graphics (shadows, reflections etc. base game has these that we can reuse.).
   Bugfixes:
     - Add nuclear-power tech as prereq to nuclear-science-pack.
 ---------------------------------------------------------------------------------------------------

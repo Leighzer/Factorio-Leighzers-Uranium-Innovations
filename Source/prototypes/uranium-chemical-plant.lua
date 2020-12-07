@@ -352,27 +352,27 @@ data:extend({
         {
           {
             production_type = "input",
-            pipe_covers = pipecoverspictures(),
+            pipe_covers = uraniumpipecoverspictures(),
             base_area = 10,
             base_level = -1,
             pipe_connections = {{ type="input", position = {-1, -2} }}
           },
           {
             production_type = "input",
-            pipe_covers = pipecoverspictures(),
+            pipe_covers = uraniumpipecoverspictures(),
             base_area = 10,
             base_level = -1,
             pipe_connections = {{ type="input", position = {1, -2} }}
           },
           {
             production_type = "output",
-            pipe_covers = pipecoverspictures(),
+            pipe_covers = uraniumpipecoverspictures(),
             base_level = 1,
             pipe_connections = {{ position = {-1, 2} }}
           },
           {
             production_type = "output",
-            pipe_covers = pipecoverspictures(),
+            pipe_covers = uraniumpipecoverspictures(),
             base_level = 1,
             pipe_connections = {{ position = {1, 2} }}
           }

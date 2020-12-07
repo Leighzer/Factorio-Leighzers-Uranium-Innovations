@@ -1,5 +1,3 @@
-require("__base__.prototypes.entity.pipecovers")
-
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
 
@@ -70,7 +68,7 @@ data:extend({
         {
           base_area = 1,
           height = 4,
-          pipe_covers = pipecoverspictures(),
+          pipe_covers = uraniumpipecoverspictures(),
           pipe_connections =
           {
             { position = {0, -1.5}, type="output" },

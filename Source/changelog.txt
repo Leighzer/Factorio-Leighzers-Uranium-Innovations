@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+  Changes:
+    - Update compatibility info for Leighzer's Buried Science and Leighzer's Science Ores.
+    - Nuclear Science Pack recipe now yields 4 packs instead of 3, decreasing how expensive it is.    
+---------------------------------------------------------------------------------------------------
 Version: 0.1.2
   Changes:
     - Add uranium fluid handling tech that unlocks uranium pipe, pipe to underground, and storage tank.    
@@ -6,7 +11,8 @@ Version: 0.1.2
     - Remove uranium pump unlock from uranium fluid processing.
     - Add uranium pump unlock to uranium fluid handling.
     - Revert change - make nuclear science pack prereq to space science.
-    - Remove unnecessary graphics (shadows, reflections etc. base game has these that we can reuse.).
+    - Remove unnecessary graphics (shadows, reflections etc. base game has these that we can reuse.) to reduce mod file size.
+    - Make uranium entities with pipe covers use uranium pipe covers.
   Bugfixes:
     - Add nuclear-power tech as prereq to nuclear-science-pack.
 ---------------------------------------------------------------------------------------------------

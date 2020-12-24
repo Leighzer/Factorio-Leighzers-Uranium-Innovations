@@ -12,7 +12,7 @@ if not leighzermods.leighzeruraniuminnovations then
 
     leighzermods.leighzeruraniuminnovations.nuclearSciencePack = {}
     leighzermods.leighzeruraniuminnovations.nuclearSciencePack.energyRequired = 21
-    leighzermods.leighzeruraniuminnovations.nuclearSciencePack.resultCount = 3    
+    leighzermods.leighzeruraniuminnovations.nuclearSciencePack.resultCount = 4
     leighzermods.leighzeruraniuminnovations.nuclearSciencePack.subgroup = "science-pack"
     leighzermods.leighzeruraniuminnovations.nuclearSciencePack.order = "f[utility-science-pack]-a" -- order immediately after utility science pack
     leighzermods.leighzeruraniuminnovations.nuclearSciencePack.name = "nuclear-science-pack"

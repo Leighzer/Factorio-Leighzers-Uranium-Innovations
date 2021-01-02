@@ -36,7 +36,7 @@ data:extend({
         icon = "__leighzeruraniuminnovations__/graphics/icons/oil-refinery.png",
         icon_size = 64, icon_mipmaps = 4,
         flags = {"placeable-neutral","player-creation"},
-        minable = {mining_time = 0.2, result = "oil-refinery"},
+        minable = {mining_time = 0.2, result = "uranium-oil-refinery"},
         max_health = leighzermods.leighzeruraniuminnovations.oilRefinery.maxHealth,
         corpse = "uranium-oil-refinery-remnants",
         dying_explosion = "medium-explosion", -- "oil-refinery-explosion",
